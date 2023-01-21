@@ -1,0 +1,38 @@
+/* ======================================================
+ブレークポイントの指定
+====================================================== */
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
+// @include responsive(xx) {} で呼び出し
+
+
+/* ======================================================
+pxからremの計算
+====================================================== */
+@function rem($px, $base: 16px) {
+  $value: $px;
+  $value: (strip-unit($px) / strip-unit($base)) * 1rem;
+
+  @return $value;
+}
+
+// font-size: rem(○○px); で表示
+
+
+/* ======================================================
+pxからvwの計算
+====================================================== */
+@function vw($px, $base: 375px) {
+  $value: $px;
+  $value: (strip-unit($px) / strip-unit($base)) * 100vw;
+
+  @return $value;
+}
+
+// $baseに横幅指定
+// font-size: vw(○○px); で表示
