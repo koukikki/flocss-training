@@ -15,13 +15,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   height: 100%;
-  font-size: 62.5%;
 }
 
 body {
-  font-family: $font-fam;
-  line-height: 1.5;
-  background: $bg-image;
+  // font-family: $font-fam;
+  // line-height: 1.5;
+  // background: $bg-image;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
