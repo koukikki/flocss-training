@@ -1,14 +1,14 @@
 /* ======================================================
 ブレークポイントの指定
 ====================================================== */
-@mixin responsive($breakpoint) {
+@mixin rp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
       @content;
     }
   }
 }
-// @include responsive(xx) {} で呼び出し
+// @include rp(xx) {} で呼び出し
 
 
 /* ======================================================
