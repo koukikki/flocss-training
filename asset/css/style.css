@@ -42,3 +42,23 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
+
+.u-relative {
+  position: relative;
+}
+
+.u-absolute {
+  position: absolute;
+}
+
+.u-left {
+  text-align: left;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-bold {
+  font-weight: bold;
+}
